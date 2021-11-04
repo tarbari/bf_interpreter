@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/pentt/OneDrive - Satakunnan ammattikorkeakoulu Oy/Brainfuck_project/brainfuck_interpreter/brainfuck_interpreter.csproj",
+      "projectUniqueName": "/mnt/c/Users/pentt/OneDrive - Satakunnan ammattikorkeakoulu Oy/Brainfuck_project/bf_interpreter/brainfuck_interpreter.csproj",
       "projectName": "brainfuck_interpreter",
-      "projectPath": "/mnt/c/Users/pentt/OneDrive - Satakunnan ammattikorkeakoulu Oy/Brainfuck_project/brainfuck_interpreter/brainfuck_interpreter.csproj",
+      "projectPath": "/mnt/c/Users/pentt/OneDrive - Satakunnan ammattikorkeakoulu Oy/Brainfuck_project/bf_interpreter/brainfuck_interpreter.csproj",
       "packagesPath": "/home/mikkop/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/pentt/OneDrive - Satakunnan ammattikorkeakoulu Oy/Brainfuck_project/brainfuck_interpreter/obj/",
+      "outputPath": "/mnt/c/Users/pentt/OneDrive - Satakunnan ammattikorkeakoulu Oy/Brainfuck_project/bf_interpreter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/mikkop/.nuget/NuGet/NuGet.Config"

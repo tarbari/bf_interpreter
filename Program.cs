@@ -12,6 +12,7 @@ namespace brainfuck_interpreter
             int tapePos = 0;                    // Defines which index in the Tape array is being modified
             string prg;                         // Array of commands that make up the program
             int prgPos = 0;                     // Defines which index in the prg array is being executed
+            int bracketCounter = 0;             // We need this to count brackets because of the possible nested loops
 
             // Read a file called program.txt and import the data to prg string
             using (var extFile = new StreamReader("program.txt"))
@@ -55,7 +56,11 @@ namespace brainfuck_interpreter
                 }
                 else if (prg[prgPos] == '[')
                 {
-
+                    if (tape[tapePos] != 0)
+                    {
+                        bracketCounter++;
+                        prgPos++;
+                    }
                 }
                 else if (prg[prgPos] == ']')
                 {
