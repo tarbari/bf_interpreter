@@ -56,15 +56,49 @@ namespace brainfuck_interpreter
                 }
                 else if (prg[prgPos] == '[')
                 {
-                    if (tape[tapePos] != 0)
+                    bracketCounter++;
+                    if (tape[tapePos] == 0)
                     {
-                        bracketCounter++;
+                        while (prg[prgPos] != ']' || bracketCounter != 0)
+                        {
+                            prgPos++;
+                            if (prg[prgPos] == '[')
+                            {
+                                bracketCounter++;
+                            }
+                            else if (prg[prgPos] == ']')
+                            {
+                                bracketCounter--;
+                            }
+                        }
+                    }
+                    else
+                    {
                         prgPos++;
                     }
                 }
                 else if (prg[prgPos] == ']')
                 {
-
+                   bracketCounter++;
+                   if (tape[tapePos] != 0) 
+                   {
+                       while (prg[prgPos] != '[' || bracketCounter != 0)
+                       {
+                           prgPos--;
+                           if (prg[prgPos] == ']')
+                           {
+                               bracketCounter++;
+                           }
+                           else if (prg[prgPos] == '[')
+                           {
+                               bracketCounter--;
+                           }
+                       }
+                   }
+                   else
+                   {
+                       prgPos++;
+                   }
                 }
                 else
                 {
