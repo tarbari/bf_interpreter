@@ -15,7 +15,7 @@ namespace brainfuck_interpreter
             int bracketCounter = 0;             // We need this to count brackets because of the possible nested loops
 
             // Read a file called program.txt and import the data to prg string
-            using (var extFile = new StreamReader("program.txt"))
+            using (var extFile = new StreamReader("program.bf"))
             {
                 prg = extFile.ReadToEnd();
             }
