@@ -35,7 +35,7 @@ namespace brainfuck_interpreter
                 }
                 else if (prg[prgPos] == '.')
                 {
-                    Console.Write(Convert.ToChar(tape[tapePos]));
+                    Console.Write(Convert.ToChar(tape[tapePos])); // Converts the data cell to ASCII character and prints it
                     prgPos++;
                 }
                 else if (prg[prgPos] == ',')
@@ -54,9 +54,9 @@ namespace brainfuck_interpreter
                     tape[tapePos]--;
                     prgPos++;
                 }
+                // This damn loop... no work.
                 else if (prg[prgPos] == '[')
                 {
-                    bracketCounter++;
                     if (tape[tapePos] == 0)
                     {
                         while (prg[prgPos] != ']' || bracketCounter != 0)
