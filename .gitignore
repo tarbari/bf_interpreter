@@ -1,2 +1,4 @@
-# VSCode specific
-.vscode
+/.vs
+/.vscode
+/bin
+/obj
