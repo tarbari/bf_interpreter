@@ -14,7 +14,7 @@ namespace brainfuck_interpreter
             int prgPos = 0;                     // Defines which index in the prg array is being executed
             int bracketCounter = 0;             // We need this to count brackets because of the possible nested loops
 
-            // Read a file called program.txt and import the data to prg string
+            // Read a file called program.bf and import the data to prg string
             using (var extFile = new StreamReader("program.bf"))
             {
                 prg = extFile.ReadToEnd();
